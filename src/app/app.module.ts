@@ -10,14 +10,15 @@ import { Pagina2Page } from '../pages/pagina2/pagina2';
 
 import { IonicStorageModule } from '@ionic/storage';
 import { AjustesProvider } from '../providers/ajustes/ajustes';
-
+import { IntroduccionPage } from '../pages/introduccion/introduccion';
 
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    Pagina2Page
+    Pagina2Page,
+    IntroduccionPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +29,8 @@ import { AjustesProvider } from '../providers/ajustes/ajustes';
   entryComponents: [
     MyApp,
     HomePage,
-    Pagina2Page
+    Pagina2Page,
+    IntroduccionPage
   ],
   providers: [
     StatusBar,

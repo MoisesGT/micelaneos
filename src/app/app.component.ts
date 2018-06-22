@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { AjustesProvider } from '../providers/ajustes/ajustes';
+import { IntroduccionPage } from '../pages/introduccion/introduccion';
 
 @Component({
   templateUrl: 'app.html'
@@ -22,7 +23,7 @@ export class MyApp {
       this._ajustes.cargar_storage().then(() => {
 
         if (this._ajustes.ajustes.mostrar_tutorial) {
-          this.rootPage = "IntroduccionPage";
+          this.rootPage = IntroduccionPage;
         } else {
           this.rootPage = HomePage;
         }
